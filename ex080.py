@@ -1,0 +1,3 @@
+num = []
+for i in range(5):
+    n = int(input('Digite um numero: '))
