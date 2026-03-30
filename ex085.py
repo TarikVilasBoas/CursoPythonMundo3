@@ -1,16 +1,12 @@
-numeros = []
-par = []
-impar = []
-
+num = [[],[]]
+valor = 0
 for n in range(7):
-    dados = int(input(f'Digite o {n+1} numero: '))
-    if dados % 2 == 0:
-        par.append(dados)
+    valor = int(input(f'Digite o {n+1} numero: '))
+    if valor % 2 == 0:
+       num[0].append(valor)
     else:
-        impar.append(dados)
-numeros.append(par[:])
-numeros.append(impar[:])
-numeros[0].sort()
-numeros[1].sort()
-print(f'Os valores pares foram: {numeros[0]}')
-print(f'Os numeros impares foram: {numeros[1]}')
+        num[1].append(valor)
+num[0].sort()
+num[1].sort()
+print(f'Os valores pares foram: {num[0]}')
+print(f'Os numeros impares foram: {num[1]}')
