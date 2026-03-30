@@ -3,7 +3,7 @@ from time import sleep
 numeros = []
 pc = []
 print(f'{'JOGO DA LOTERIA':*^50}')
-print()
+print('-'*50)
 j = int(input('Quantos jogos voce quer que eu sorteie? '))
 for e in range(j):
     for n in range(6):
@@ -12,5 +12,6 @@ for e in range(j):
     pc.clear()
 print('='*50)
 for n in range(len(numeros)):
-    print(f'O {n+1}o numero sugerido é = {numeros[n]}')
+    numeros[n].sort()
+    print(f'Jogo {n+1} = {numeros[n]}')
     sleep(0.7)
