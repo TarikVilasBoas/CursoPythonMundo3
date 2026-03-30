@@ -10,8 +10,12 @@ for n in range(3):
         if i == 2:
             soma2 += dados
     matriz.append(iten)
-for p in range(3):
-    print(matriz[p],'\n')
+print('-='*30)
+for l in range(3):
+    for c in range(3):
+        print(f'( {matriz[l][c]:^5} )',end=' ')
+    print()
+print('-='*30)
 print(f'A soma de todos os pares é {par}')
 print(f'A soma da terceira coluna é {soma2}')
 print(f'O maior valor da segunda linha é {max(matriz[1])}')
