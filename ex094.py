@@ -27,4 +27,5 @@ print()
 print(f'As pessoas com idade acima da media de {media:.2f} sao: ',end='')
 for i, k in enumerate(pessoas):
     if k['idade'] > media:
-        print(f'{k['nome']}',end='')
+        print(f'{k}',end='')
+ 
