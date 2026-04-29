@@ -1,7 +1,10 @@
-def escreva(*txt):
-    print('-')
-    print(txt)
-    print('-')
+def escreva(txt):
+    tam = len(txt) + 4
+    print('-' * tam)
+    print(f'  {txt}')
+    print('-' * tam)
 
 
-escreva('Sou foda no python')
+escreva('Teste texto')
+escreva('Obrigado')
+escreva('Fim')
