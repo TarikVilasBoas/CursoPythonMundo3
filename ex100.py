@@ -3,7 +3,7 @@ from time import sleep
 numeros = []
 def sorteia():
     for i in range(5):
-        numeros.append(randint(1,6))
+        numeros.append(randint(1,10))
     sleep(0.8)
     print(f'Os numeros sorteados sao {numeros}')
 def SomaPar():
