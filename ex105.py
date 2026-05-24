@@ -6,13 +6,11 @@ def notas(*num, sit=False):
     :param sit: Opçao para ver a situação do aluno
     :return: Retorna o dicionario com as informaçoes do aluno
     '''
-    qnt = len(num)
-    soma = sum(num)
-    dados['Total'] = qnt
+    dados['Total'] = len(num)
     dados['Menor'] = min(num)
     dados['Maior'] = max(num)
-    dados['Media'] = soma / qnt
-    while sit == True:
+    dados['Media'] = sum(num)/len(num)
+    if sit == True:
         if dados['Media'] <= 5:
             dados['Situação'] = 'A baixo da media'
         elif dados['Media'] <= 7:
@@ -22,5 +20,5 @@ def notas(*num, sit=False):
     return dados
 
 
-resp = notas(5.5,9.5,10,6.5, sit=True)
+resp = notas(3.5,4.5,6.8, sit=True)
 print(resp)
