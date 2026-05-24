@@ -1,5 +1,10 @@
 
 def leiaInt(num):
+    '''
+    testa se a entrada é um numero inteiro
+    :param num: entrada do digito
+    :return: sucesso caso seja int
+    '''
     global n
     while ValueError:
         n =  input('Digite um numero: ').strip()
@@ -7,7 +12,7 @@ def leiaInt(num):
             num = int(n)
             return n
         except ValueError:
-            print('\33[31mERRO: Digite um numero inteiro valido\33[m')
+            print('\033[31mERRO: Digite um numero inteiro valido\033[m')
 
 
 
