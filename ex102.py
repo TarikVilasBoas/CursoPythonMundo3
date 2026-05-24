@@ -16,5 +16,5 @@ def fatorial(num = 0, show=False):
         print(s, '=', f)
     return f
 
-print(fatorial(5, show=True))
+print(fatorial(15, show=True))
 help(fatorial)
